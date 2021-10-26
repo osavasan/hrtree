@@ -1,5 +1,6 @@
-from hr.tree import Tree 
+from hr.tree import Tree
 import logging
+
 
 def main():
     logging.getLogger().setLevel(logging.INFO)
@@ -8,6 +9,7 @@ def main():
     hr_tree.load_file(input_file if input_file else "input.json")
     hr_tree.show()
     print(f"Total salary: {hr_tree.total_salary()}")
-    
-if __name__ == '__main__':
+
+
+if __name__ == "__main__":
     main()
